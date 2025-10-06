@@ -1,14 +1,8 @@
-document.getElementById('copy-email').addEventListener('click', () => {
-  const email = 'xyrealnhelp@gmail.com';
-  navigator.clipboard.writeText(email).then(() => {
-    alert(`Email copied: ${email}`);
-  });
-});
-
+//pages button
 document.getElementById('other-pages').addEventListener('click', function () {
   window.location.href = 'pages/index.html'
 });
-
+//server status
 async function getServerStatus() {
   const statusElement = document.getElementById('server-status');
 
@@ -27,3 +21,4 @@ async function getServerStatus() {
 }
 
 getServerStatus();
+
